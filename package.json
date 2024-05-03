@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build && npm seed && npm createsuperuser",
+    "build": "prisma generate && next build && npm run seed && npm run createsuperuser",
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts",
