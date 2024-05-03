@@ -6,21 +6,39 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "tsx scripts/seed.ts",
+    "createsuperuser": "tsx scripts/createsuperuser.ts email=admin@admin.com password=123456"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.3",
+    "@prisma/client": "^5.13.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/crypto-js": "^4.2.2",
+    "@types/papaparse": "^5.3.14",
+    "clsx": "^2.1.1",
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.2.0",
+    "next": "14.2.3",
+    "next-auth": "^5.0.0-beta.17",
+    "papaparse": "^5.4.1",
+    "raw-loader": "^4.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "use-debounce": "^10.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "prisma": "^5.13.0",
+    "tailwindcss": "^3.4.1",
+    "tsx": "^4.7.3",
+    "typescript": "^5"
   }
 }
